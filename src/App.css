@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+*,div{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  background-color: rgb(252, 255, 57);
+  box-shadow: 0 0 5px rgb(150, 150, 150);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header .center_header{
+  display: grid;
+  grid-template-columns: 55px auto;
   align-items: center;
+  width: 90%;
+  height: 70px;
+  margin: auto;
+}
+.logo{
+  max-width: 45px;
+}
+
+.logo img{
+  width: 100%;
+  border-radius: 30px;
+}
+
+.center_header h3{
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.text_create{
+  margin: 35px 0;
+}
+
+.text_center{
+  width: 500px;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 0 8px #6d8f6d;
+  border-radius: 5px;
+}
+
+.text_create form{
+  width: 85%;
+}
+
+form input,textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  resize: none;
+
+}
+
+form .hafiz{
+  position: absolute;
+  right: 10px;
+  bottom: -17px;
+  border-radius: 30px;
+  padding: 6px 6px;
+  min-width: 38px;
+  color: #f1ee16;
+  background-color: rgb(102, 102, 102);
+}
+
+form .hafiz:hover{
+  background-color: rgb(42, 197, 3);
+  color: rgba(243, 242, 187, 0.842);
+}
+
+.text_box{
+  margin-top: 25px;
+}
+
+
+.text_box .text{
+  width: 500px;
+  margin: auto;
+  height: 75px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #6d8f6d;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.text p{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main_note{
+  width: 93%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.main_note .note_area{
+  width: 220px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #6d8f6d;
+  position: relative;
+  margin: 15px 15px 15px 0;
+}
+
+.note_area h3{
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  
+}
+
+.main_note p {
+  text-align: justify;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.note_area .btn{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  min-width: 20px;
+  border-radius: 19px;
+  transition: .4s;
+  color: red;
+  background-color: #fff;
+}
+
+.note_area .btn:hover {
+  background-color: rgb(230, 18, 18);
+  color: #fff;
+  transition: .4s;
+}
+
+footer{
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
